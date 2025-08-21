@@ -1,0 +1,2 @@
+[console_scripts]
+git-tea = git_tea.cli:main

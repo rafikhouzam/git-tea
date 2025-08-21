@@ -1,0 +1,3 @@
+one_liners:
+  - "BREAKING: {author} touched {files} files and dropped +{added}/-{removed} lines in {top_file}. Internet stunned."
+  - "At {time_local}, {author} whispered '{subject}'. Insiders call it '{heat_word}'."

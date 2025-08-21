@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=67", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "git-tea"
+version = "0.1.0"
+description = "Spill the tea on your repo: tabloid-style gossip from git history"
+authors = [{name="You", email="you@example.com"}]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "click>=8.1.7",
+    "rich>=13.7.0",
+    "PyYAML>=6.0",
+]
+
+[project.scripts]
+git-tea = "git_tea.cli:main"

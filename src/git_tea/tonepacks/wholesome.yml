@@ -1,0 +1,9 @@
+one_liners:
+  - "A round of applause for {author} 👏 — +{added}/-{removed} in {top_file}, making the codebase a little cozier today."
+  - "{author} lovingly polished {files} files at {time_local}. Truly heartwarming. 💖"
+  - "Commit of the day: “{subject}” — the repo feels safer already 🌟"
+  - "{author} dropped +{added}/-{removed}, a gentle nudge toward greatness. Heat {heat}/10 — {heat_word}."
+daily_openers:
+  - "🌈 Daily Dose of Joy ({date}) 🌈"
+closers:
+  - "Thanks to all contributors for brightening our repo ✨"

@@ -1,0 +1,9 @@
+one_liners:
+  - "Oh look, {author} touched {files} files again. +{added}/-{removed}? Bold of you. 🙄"
+  - "At {time_local}, {author} whispered “{subject}” — riveting stuff. Sure, Jan."
+  - "Heat {heat}/10 — {heat_word}. Probably just deleting comments, let’s be real."
+  - "{author} dropped changes in {top_file}. Will it work? Place your bets. 🎲"
+daily_openers:
+  - "☕ Daily Shade Report ({date}) ☕"
+closers:
+  - "Tune in tomorrow for more questionable commits…"
