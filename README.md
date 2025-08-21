@@ -1,46 +1,93 @@
-# git-tea ☕
 
-**Spill the tea on your repo.** `git-tea` turns your git history into cheeky tabloid one-liners and daily/weekly wrap-ups.
+# git-tea ☕  
 
-https://github.com/yourname/git-tea (replace with your repo)
+[![For the Love of Code](https://img.shields.io/badge/hackathon-ForTheLoveOfCode-ff69b4?logo=github)](https://gh.io/ftloc)  
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)  
+[![Made with Python](https://img.shields.io/badge/Made%20with-Python-blue?logo=python)](https://www.python.org/)  
 
-## Install (dev)
+**Spill the tea on your repo.**  
+Turn boring commit logs into juicy *tabloid headlines*.  
+
+---
+
+## 🍵 Demo  
+
+### Single-Line Tea
+```bash
+$ git tea
+BREAKING: Rafi Khouzam dropped +50/-12 in pages/3_Image_Lookup.py at 2:32 PM.  
+Heat 0/10 — quiet whispers. Subject: “feat: updated tagged metadata file after second rerun”
+```
+
+### Wholesome Vibes
+```bash
+$ git tea --tone wholesome
+Rafi lovingly polished 3 files at 11:47 AM. Truly heartwarming. 💖
+```
+
+### Petty Vibes
+```bash
+$ git tea --tone petty
+Oh look, Rafi touched 7 files again. +230/-89? Bold of you. 🙄
+```
+
+*will nsert a GIF here of myself committing code and running `git tea` using [asciinema](https://asciinema.org/) or `ttystudio` to record a quick terminal demo.*
+
+---
+
+## 🚀 Install  
 
 ```bash
-pipx install -e .
-# or
+pip install git-tea
+# or for dev:
 pip install -e .
 ```
 
-## Usage
+---
+
+## 🎛 Usage  
 
 ```bash
 git tea                 # latest commit gossip
 git tea --since 24h     # daily tabloid
 git tea --since 7d      # weekly wrap
-git tea --tone petty    # tone pack: tabloid | wholesome | petty
-git tea --format md     # output format: text | md | json
-git tea --top 5         # show top 5 spicy items
+git tea --tone petty    # tone: tabloid | wholesome | petty
+git tea --format md     # output: text | md | json
+git tea --top 5         # show top spicy commits
 ```
 
-> Note: `git tea` works inside a git repo. It reads **local** history and never phones home.
+---
 
-## Examples
+## 🌈 Hackathon Category  
+- **Terminal Talent** ✨ (primary)  
+- Bonus fit: *Everything but the Kitchen Sink* (with Actions)  
 
-```bash
-git add . && git commit -m "hotfix: patch prod"
-git tea
-# BREAKING: You dropped +123/-7 in api/router.py at 2:14 AM. Heat 8/10. Rumors of a secret launch swirl…
+---
+
+## 🧩 Features  
+- Multiple **tonepacks** (`tabloid`, `wholesome`, `petty`)  
+- Spicy **heat score** based on commit size, keywords, and timing  
+- Markdown output for README / PR gossip pages  
+- GitHub Action to auto-comment gossip on merged PRs  
+- Extensible — add your own YAML tonepacks!  
+
+---
+
+## 🤝 Contributing  
+Want to add your own *tonepack*?  
+Drop a YAML into `src/git_tea/tonepacks/` and open a PR.  
+
+```yaml
+one_liners:
+  - "Shocking: {author} rewrote {files} files at {time_local}. Heat {heat}/10."
 ```
 
-## Tones
+---
 
-Tones live in YAML at `git_tea/tonepacks/*.yml`. Ship PRs with new tones!
+## ⚖️ License  
+[MIT](LICENSE) © 2025 Rafi Khouzam  
 
-## GitHub Action (optional)
+---
 
-See `.github/workflows/gossip-on-merge.yml` for a comment bot that posts gossip on merged PRs.
-
-## License
-
-MIT
+## 🏆 For the Love of Code 2025  
+Built for fun, vibes, and maximum gossip.  
