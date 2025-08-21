@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "git-tea"
 version = "0.1.0"
 description = "Spill the tea on your repo: tabloid-style gossip from git history"
-authors = [{name="You", email="you@example.com"}]
+authors = [{name="Rafi Khouzam", email="khouzamrafi@gmail.com"}]
 readme = "README.md"
 requires-python = ">=3.9"
 dependencies = [
@@ -17,3 +17,10 @@ dependencies = [
 
 [project.scripts]
 git-tea = "git_tea.cli:main"
+
+# 👇 ADD THESE
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
