@@ -48,3 +48,4 @@ pytest.xml
 # Misc
 .DS_Store
 *.log
+*.egg-info
